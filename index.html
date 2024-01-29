@@ -7,18 +7,19 @@
         <!--Tailwind CSS-->
         <link href="src/output.css"  rel="stylesheet">
         <style>
-            @keyframes gradientAnimation {
+            /* Animation for the gradient mesh */
+            @keyframes gradientMeshAnimation {
                 0% {
-                    background-position: 100% 0%;
+                    background-position: 0% 50%;
                 }
                 100% {
-                    background-position: 0% 0%;
+                    background-position: 100% 50%;
                 }
             }
         </style>
         <title>Daisha Davis</title>
     </head>
-    <body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 ...">
+    <body class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 animate-gradientMeshAnimation">
        <header>
             <nav>
                 <ul class="flex  justify-end space-x-12 mt-3 mr-6">
@@ -45,7 +46,7 @@
                 </ul>
             </nav>
         </header>
-        <footer class="flex space-x-60 fixed bottom-0 mb-2">
+        <footer class="flex fixed bottom-0 space-x-60 mb-2">
             <h3 class="text-xl text-white font-semibold ml-8">Daisha Davis</h3>
             <div class="flex space-x-2 text-white fixed right-2">
                 <span>Software Engineer</span>
